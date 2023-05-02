@@ -1,0 +1,28 @@
+.form-semi-container {
+  width: 500px;
+}
+
+.form-control label {
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.0015em;
+  margin-top: 30px;
+}
+
+.form-control input {
+  width: 415px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.btn-submit {
+  width: 415px;
+  height: 35px;
+  border-radius: 5px;
+  background: rgb(168, 147, 154);
+  border: none;
+}
+
+.btn-submit:hover {
+  background: rgb(175, 122, 140);
+}

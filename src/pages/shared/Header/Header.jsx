@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -33,10 +33,12 @@ const Header = () => {
               </Link>
             </div>
             <Nav>
-              <Nav.Link href="#deets">Profile</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                <Button variant="secondary">Login</Button>
-              </Nav.Link>
+              <Link className="text-decoration-none " to="/login">
+                Login
+              </Link>
+              <Link className="text-decoration-none ms-4" to="/registation">
+                Registation
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

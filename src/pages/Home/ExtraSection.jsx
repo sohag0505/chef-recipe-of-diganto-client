@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
+import BestChef from "./BestChef";
 
 const ExtraSection = () => {
   return (
@@ -59,7 +60,9 @@ const ExtraSection = () => {
           </Card.Body>
         </Card>
       </CardGroup>
-      <div></div>
+      <div>
+        <BestChef></BestChef>
+      </div>
     </div>
   );
 };
