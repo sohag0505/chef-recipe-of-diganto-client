@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { Carousel, Container } from "react-bootstrap";
+import ExtraSection from "./ExtraSection";
 
 const Home = () => {
   return (
@@ -43,6 +44,9 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <div className="mt-4">
+        <ExtraSection></ExtraSection>
+      </div>
     </Container>
   );
 };
