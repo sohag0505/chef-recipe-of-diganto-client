@@ -4,6 +4,7 @@ import Blog from "../pages/Blog/Blog";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Registation from "../pages/Registation/Registation";
+import ViewRecipes from "../pages/ViewRecipes/ViewRecipes";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/registation",
         element: <Registation></Registation>,
+      },
+      {
+        path: "/recipes",
+        element: <ViewRecipes></ViewRecipes>,
       },
     ],
   },
