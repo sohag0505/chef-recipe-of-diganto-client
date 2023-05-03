@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import img from "./../../assets/heart.svg";
 const CardDetails = ({ id }) => {
   const [chef, setShef] = useState({});
@@ -28,7 +29,9 @@ const CardDetails = ({ id }) => {
             <h3>
               <img width={35} height={35} src={img} alt="" /> {chef.likes}
             </h3>
-            <Button variant="info">View Recipes</Button>
+            <Link to={`/recipes/${id}`}>
+              <Button variant="info">View Recipes</Button>
+            </Link>
           </div>
         </Card.Body>
       </Card>
