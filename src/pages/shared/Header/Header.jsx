@@ -3,6 +3,8 @@ import React, { useContext } from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import ActiveLink from "../ActiveLink/ActiveLink";
+import "./Header.css";
 
 const Header = () => {
   const { logOut, user } = useContext(AuthContext);
@@ -27,12 +29,10 @@ const Header = () => {
           <Navbar.Brand href="#">Diganto</Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">
             <div className="mx-auto">
-              <Link className=" text-decoration-none" to="/">
+              <ActiveLink className="activeHome" to="/">
                 Home
-              </Link>
-              <Link className=" text-decoration-none ms-4" to="/blog">
-                Blog
-              </Link>
+              </ActiveLink>
+              <ActiveLink to="/blog">Blog</ActiveLink>
             </div>
             {!user && (
               <Nav>
