@@ -10,7 +10,7 @@ const MoreDetails = ({ recipe }) => {
     setButton(true);
   };
   return (
-    <div>
+    <div className="ms-4 mb-2">
       <Card border="success" style={{ width: "18rem" }}>
         <Card.Body>
           <Card.Title>{recipe.recipeName}</Card.Title>

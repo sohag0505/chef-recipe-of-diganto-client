@@ -12,9 +12,6 @@ const Header = () => {
     <Container>
       <div className="text-center">
         <h1>Chef Recipe of Diganto</h1>
-        <p>
-          <small>Savar,Dhaka</small>
-        </p>
       </div>
 
       <Navbar
