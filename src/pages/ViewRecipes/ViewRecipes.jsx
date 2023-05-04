@@ -24,7 +24,7 @@ const ViewRecipes = () => {
     return (
       <div className="d-flex justify-content-center mt-2">
         <Spinner animation="border" role="status">
-          <span className="visually-hidden ms-4 ">Loading...</span>
+          <span className="visually-hidden ms-4 ">Loading.....</span>
         </Spinner>
       </div>
     );
