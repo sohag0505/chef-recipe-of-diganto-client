@@ -46,6 +46,16 @@ const Registation = () => {
         >
           <div className="form-control p-4">
             <h2 className="text-center mt-2">Registation</h2>
+            <label className="d-block" htmlFor="name">
+              Name
+            </label>
+            <input
+              className="border rounded"
+              type="text"
+              name="name"
+              id=""
+              required
+            />
             <label className="d-block" htmlFor="email">
               Email
             </label>
@@ -66,16 +76,7 @@ const Registation = () => {
               id=""
               required
             />
-            <label className="d-block" htmlFor="name">
-              Name
-            </label>
-            <input
-              className="border rounded"
-              type="text"
-              name="name"
-              id=""
-              required
-            />
+
             <label className="d-block" htmlFor="photo">
               Photo URL
             </label>

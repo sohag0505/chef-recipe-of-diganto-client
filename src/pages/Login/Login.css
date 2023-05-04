@@ -1,5 +1,5 @@
 .form-semi-container {
-  width: 500px;
+  width: 330px;
 }
 
 .form-control label {
@@ -10,13 +10,13 @@
 }
 
 .form-control input {
-  width: 415px;
+  width: 280px;
   height: 35px;
   margin-top: 10px;
 }
 
 .btn-submit {
-  width: 415px;
+  width: 280px;
   height: 35px;
   border-radius: 5px;
   background: rgb(168, 147, 154);
@@ -28,11 +28,11 @@
 }
 
 .btn-google {
-  width: 415px;
+  width: 280px;
   height: 35px;
 }
 
 .btn-github {
-  width: 415px;
+  width: 280px;
   height: 35px;
 }

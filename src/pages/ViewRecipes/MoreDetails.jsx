@@ -27,7 +27,7 @@ const MoreDetails = ({ recipe }) => {
             onClick={handleButton}
             variant="secondary"
           >
-            Secondary
+            Favourite
           </Button>
         </Card.Body>
       </Card>
