@@ -1,21 +1,34 @@
 import React, { useEffect, useState } from "react";
-import { Card, Container } from "react-bootstrap";
+import { Card, Container, Row, Spinner } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import img from "./../../assets/heart.svg";
+import MoreDetails from "./MoreDetails";
 
 const ViewRecipes = () => {
   const { id } = useParams();
   const [chef, setShef] = useState({});
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     fetch(`https://chef-recipe-of-server-sohag0505.vercel.app/chef/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setShef(data);
         console.log(data);
+        setLoading(false);
       })
       .catch((error) => console.log(error));
-  });
+  }, []);
+  if (loading)
+    return (
+      <div className="d-flex justify-content-center mt-2">
+        <Spinner animation="border" role="status">
+          <span className="visually-hidden ms-4 ">Loading...</span>
+        </Spinner>
+      </div>
+    );
+
   return (
     <Container className="mt-4">
       <div>
@@ -43,6 +56,14 @@ const ViewRecipes = () => {
             </div>
           </div>
         </div>
+        <h2 className="text-center mt-4 mb-4">Favourite Food</h2>
+        <Row xs={1} md={2} lg={3}>
+          {chef?.recipes?.map((rec) => (
+            <div key={rec.recipeName}>
+              <MoreDetails recipe={rec}></MoreDetails>
+            </div>
+          ))}
+        </Row>
       </div>
     </Container>
   );
