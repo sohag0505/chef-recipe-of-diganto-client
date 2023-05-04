@@ -5,6 +5,7 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Registation from "../pages/Registation/Registation";
 import ViewRecipes from "../pages/ViewRecipes/ViewRecipes";
+import PrivateRoute from "../pages/route/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/recipes/:id",
-        element: <ViewRecipes></ViewRecipes>,
+        element: (
+          <PrivateRoute>
+            <ViewRecipes></ViewRecipes>
+          </PrivateRoute>
+        ),
       },
     ],
   },

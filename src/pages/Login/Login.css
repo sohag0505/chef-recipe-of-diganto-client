@@ -26,3 +26,13 @@
 .btn-submit:hover {
   background: rgb(175, 122, 140);
 }
+
+.btn-google {
+  width: 415px;
+  height: 35px;
+}
+
+.btn-github {
+  width: 415px;
+  height: 35px;
+}

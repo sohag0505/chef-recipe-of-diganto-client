@@ -8,7 +8,7 @@ const ViewRecipes = () => {
   const [chef, setShef] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/chef/${id}`)
+    fetch(`https://chef-recipe-of-server-sohag0505.vercel.app/chef/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setShef(data);

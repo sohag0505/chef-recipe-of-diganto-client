@@ -6,14 +6,14 @@ const CardDetails = ({ id }) => {
   const [chef, setShef] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/chef/${id}`)
+    fetch(`https://chef-recipe-of-server-sohag0505.vercel.app/chef/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setShef(data);
         console.log(data);
       })
       .catch((error) => console.log(error));
-  });
+  }, []);
   return (
     <div className="ps-2">
       <Card>
